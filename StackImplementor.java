@@ -63,6 +63,31 @@ public class StackImplementor
 		}
 		
 	}//end of pop() method
+	
+	void display()//displays the element pointed by the top variable
+	{
+		
+		if(isCreated)//if stack is created then only check next condition!
+		{
+			
+			if(top!=-1)//if stack is not empty
+			{
+				System.out.println("Element pointed by top is : "+s.a[top]);
+			}//end of inner if condition
+			
+			else
+			{
+				System.out.println("Stack is empty, Nothing to display");
+			}//end of inner else stmt
+			
+		}//end of outer if condition
+		
+		else//if stack is not yet created throw error!
+		{
+			System.out.println("ERROR : Stack is not existing yet!");
+		}//end of outer else stmt
+		
+	}//end of display() method
 
 
-} 
+}//end of StackImplementor class 
