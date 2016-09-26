@@ -34,11 +34,35 @@ public class StackImplementor
 		
 		else//if stack does not exists, warn user to create stack!
 		{
-			
+			System.out.println("ERROR : ");
 		}//end of outer else condition
 		
-	}
+	}//end of push(.) method
 
+	void pop()//method to pop the element pointed by top out of the stack!
+	{
+		
+		if(isCreated)//checking whether the stack is created or not(if created we check for position of top in next condition)"
+		{
+			
+			if(top!=-1)//checking whether the stack is not empty!
+			{
+				top--;
+			}//end of inner if condition
+			
+			else//if stack is empty ,throw error!
+			{
+				System.out.println("ERROR : Stack is already empty, cannot perform pop operation!");
+			}//end of inner else stmt
+			
+		}//end of outer if condition
+		
+		else//stack is not yet created,so throw ERROR to user!
+		{
+			System.out.println("ERROR : Stack is not yet created!");
+		}
+		
+	}//end of pop() method
 
 
 } 
